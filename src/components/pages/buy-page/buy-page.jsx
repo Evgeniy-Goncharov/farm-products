@@ -18,6 +18,7 @@ export default function BuyPage ({ products }) {
         selectProducts.reduce((sum, current) => 
             sum + current.price, 0
     )),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [selectProductIds]);
 
     const handleProductClick = (index, isChecked) => {
